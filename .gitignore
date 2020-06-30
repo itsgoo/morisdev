@@ -1,6 +1,0 @@
-db.sqlite3
-morisdev/settings_place/*.py
-media/*
-local_settings.py
-prod_settings.py
-.gitignore
