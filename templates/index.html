@@ -5,11 +5,14 @@
 {% block content %}
 
 
-<div class="card text-center bg-transparent">
+<div class="container-xxl" >
+<div class="card main_mt main_mb text-center bg-transparent">
 
     <div class="card-body">
-      <h1 class="card-title title_h1">Web Developer <br> of services <br> and sites
-    </h1>
+      <div class="card-title img_text">
+        <div class="title_h1" contenteditable="true">Developer <br> of web services <br> and of sites
+        </div>
+      </div>
       <p class="card-text mb-5">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn  btn_custom btn_left transition animation_shadow">View portfolio
     </a>
@@ -21,8 +24,153 @@
 
 
 
+<div class="card main_mt  bg-transparent">
 
-<div class="row" >
+  <div class="col-sm-7 responsive_title">
+  <div class="card-body">
+    <div class="card-title img_text">
+      <div class="title_h1" >Development
+      </div>
+    </div>
+    <p class="card-text mb-5">Each time a font is updated — such as when new characters 
+      are added — SkyFonts will automatically update the font on your device.</p>
+
+    </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+<div class="row main_mb ">
+  <div class=" row col-sm-7 responsive_el">
+    <div class="col-sm-7 responsive_el" >
+      <canvas id="myChart" width="400" height="400"></canvas>
+      <script>
+      var ctx = document.getElementById('myChart');
+      var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'],
+              datasets: [{
+                  label: false,
+                  data: [12, 13, 3, 5, 3],
+                  backgroundColor: [
+                      '#585EE6',
+                      '#585EE6',
+                      '#585EE6',
+                      '#585EE6',
+                      '#585EE6',
+                  ],
+              }]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero: true
+                      },
+                      gridLines: {
+                          display: false
+                      },
+                  }],
+
+                  xAxes: [{
+                      gridLines: {
+                          display: false
+                      },
+                  }]
+              },
+              title: {
+                  display: false,
+          },
+          legend: {
+              display: false,
+          },
+          animation: {
+              duration: 0 // general animation time
+          },
+          hover: {
+              animationDuration: 0 // duration of animations when hovering an item
+          },
+          responsiveAnimationDuration: 0 // animation duration after a resize
+        }
+
+        });
+      </script>
+    </div>
+    <div class="col-sm-5 responsive_el">
+      <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active off_rools" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> 
+          <span class="circle">
+            <span class="circle_mini bg_blue"></span>
+          </span><span class="tecnology">Python</span> 
+        </a>
+        <a class="nav-link off_rools" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
+          <span class="circle">
+            <span class="circle_mini bg_pink"></span>
+          </span><span class="tecnology">Javascript</span> 
+
+        </a>
+        <a class="nav-link off_rools" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+
+          <span class="circle">
+            <span class="circle_mini bg_green"></span>
+          </span><span class="tecnology">PHP</span> 
+
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-5 responsive_el">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+        <h3 class="skill_name_1">Python</h3>
+        <div class="card-text">Each time a font is updated — such as when new characters 
+          are added — SkyFonts will automatically update the font on your device. Each time a font is updated — such as when new characters are added — SkyFonts will automatically update the font on your device.</div>
+      </div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+        <h3 class="skill_name_2">Javascript</h3>
+        <div class="card-text">Each time a font is updated — such as when new characters 
+          are added — SkyFonts will automatically update the font on your device. Each time a font is updated — such as when new characters are added — SkyFonts will automatically update the font on your device.</div>
+      </div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+        <h3 class="skill_name_3">PHP</h3>
+        <div class="card-text">Each time a font is updated — such as when new characters 
+          are added — SkyFonts will automatically update the font on your device. Each time a font is updated — such as when new characters are added — SkyFonts will automatically update the font on your device.</div></div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -36,10 +184,41 @@
 
 
 
+<div class="container-fluid" >
+  <div class="row main_mb ">
+    <div class=" row col-sm-12 responsive_el no_padding">
+      <div class="col-sm-7 responsive_el fluid_block">
+        <div class="card-title img_text">
+          <div class="title_h1" >Portfolio
+          </div>
+        </div>
+        <p class="card-text mb-4">
+          Each time a font is updated — such as when new characters 
+          are added — SkyFonts will automatically update the font on your device. Each time a font is updated — such as when new characters are added — SkyFonts will automatically update the font on your device.
+        </p>
+        <a href="#" class="btn  btn_custom btn_left transition animation_shadow">View portfolio
+        </a>
+      </div>
+  
+
+
+
+  
+      <div class="col-sm-5 responsive_el">
+          <div class="img_background"></div>
+      </div>
+  </div>
+
+
+  </div>
 
 
 
 
+
+
+
+  
 {% endblock content %}
 
 
