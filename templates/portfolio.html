@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="container-xxl" >
+
+<div class="row main_mt ">
+    <div class="card-body no_padding">
+        <div class="card-title img_text">
+          <div class="title_h1" >Portfolio
+          </div>
+        </div>
+
+    
+    </div>
+
+  </div>
+
+
+  
+  
+
+  <div class="row ">
+    <div class="col mb-4 col-sm-5 responsive_el" >
+      <div class="card case_radius">
+        <img src="{% static 'imgs/case_two.png' %}" class="card-img-top" alt="...">
+        <div class="card-body padding_lr_30">
+          <h5 class="card-title">
+            <img src="{% static 'imgs/logo_case_two.png' %}" class="" alt="...">
+          </h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="{% url 'portfolio' %}" class="link_custom link_transition">View portfolio
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4 col-sm-7 responsive_el height_responsive" >
+        <div class="card case_radius bg_img">
+          
+          <div class="card-body padding_lr_30 case_content">
+            <h5 class="card-title">
+              <img src="{% static 'imgs/logo_case_two.png' %}" class="" alt="...">
+            </h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="{% url 'portfolio' %}" class="link_custom link_transition">View portfolio
+          </a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+  <div class="row ">
+    <div class="col mb-4 col-sm-7 responsive_el height_responsive" >
+        <div class="card case_radius bg_img">
+          
+          <div class="card-body padding_lr_30 case_content">
+            <h5 class="card-title">
+              <img src="{% static 'imgs/logo_case_two.png' %}" class="" alt="...">
+            </h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="{% url 'portfolio' %}" class="link_custom link_transition">View portfolio
+          </a>
+          </div>
+        </div>
+      </div>
+    <div class="col mb-4 col-sm-5 responsive_el" >
+      <div class="card case_radius">
+        <img src="{% static 'imgs/case_two.png' %}" class="card-img-top" alt="...">
+        <div class="card-body padding_lr_30">
+          <h5 class="card-title">
+            <img src="{% static 'imgs/logo_case_two.png' %}" class="" alt="...">
+          </h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="{% url 'portfolio' %}" class="link_custom link_transition">View portfolio
+        </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+{% endblock %}

@@ -79,6 +79,21 @@ background-image:url(/static/imgs/Group58.png)
 }
 
 
+.img_background {
+    background: url(/static/imgs/portfolioimg.png) -9px 21px no-repeat;
+    width: 100%;
+    height: 1085px;
+    position: absolute;
+    overflow: hidden;
+    top: -240px;
+}
+
+.height_el{
+    height: 745px;
+}
+
+
+
 @media only screen and (max-width: 767px) and (min-width: 300px)  {
     .responsive_el {
         -ms-flex: none !important;
@@ -92,8 +107,33 @@ background-image:url(/static/imgs/Group58.png)
     }
     
     .title_h1{
-        font-size: 4.5rem !important;
+        font-size: 3.5rem !important;
     }
+    .img_background {
+        background: url(/static/imgs/portfolioimg.png) 0px 0px no-repeat;
+            background-size: auto;
+        width: 66%;
+        height: 490px;
+        position: absolute;
+        overflow: hidden;
+        top: -23px;
+        background-size: 100%;
+        right: -2%;
+        padding: 0 !important;
+    }
+
+
+    .height_el{
+        height: 245px;
+    }
+
+    .height_responsive{
+        height: 470px;
+    }
+
+
+
+
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px)  {
@@ -106,6 +146,7 @@ background-image:url(/static/imgs/Group58.png)
     .title_h1{
         font-size: 4.5rem !important;
     }
+    
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px)  {
@@ -162,16 +203,6 @@ background-image:url(/static/imgs/Group58.png)
     color: #C8C8C8;
 }
 
-/* .btn_custom{
-    background: none;
-    border-radius: 10px;
-    
-    padding: 20px 55px;
-    border:none;
-    color: #C8C8C8 ;
-    border: 1px solid #C8C8C8;
-} */
-/* border: 1px solid #ff26d0 !important; */
 
 
 
@@ -197,12 +228,12 @@ background-image:url(/static/imgs/Group58.png)
 .animation_shadow{
     box-shadow: inset 5px 5px 16px #101215, inset -5px -5px 16px #101215;
     color: #C8C8C8;
-    -webkit-animation: shadowFadeOut 0.5s;
+    /* -webkit-animation: shadowFadeOut 0.3s; */
 }
 
 
 .animation_shadow:hover{
-    -webkit-animation: shadowFade 0.5s;
+    -webkit-animation: shadowFade 0.3s;
     box-shadow: 4px 4px 15px #380bb6, -4px -4px 15px #ce29cb;
     color: #fff;
 
@@ -243,30 +274,13 @@ background-image:url(/static/imgs/Group58.png)
 
     background: #2F343A;
 }
+
 .nav-link_portfolio{
 
     background: none !important;
 }
 
 
-/* 
-.btn_custom{
-    background: #2E3337;
-    box-shadow: inset 5px 5px 16px #101215, inset -5px -5px 16px #101215 !important;
-    transition: box-shadow 0.6s ease-in-out;
-    border-radius: 10px;
-    padding: 20px 55px;
-    border:none;
-    background: #2F343A;
-    color: #C8C8C8;
-}
-
-.btn_custom:hover {
-    background: #24282d;
-    box-shadow: inset 4px 4px 15px #31177b, inset -4px -4px 15px #7b1779 !important;
-
-    color: #fff;
-} */
 
 
 
@@ -284,18 +298,6 @@ background-image:url(/static/imgs/Group58.png)
 
 
 
-
-
-
-
-
-
-
-/* .btn_custom:hover {
-    background: linear-gradient(292.05deg, #292731 55.87%, #7b1779 132.69%);
-    box-shadow: 5px 5px 16px #1A1E21, -5px -5px 16px #32363E;
-    
-} */
 
 
 
@@ -305,23 +307,15 @@ background-image:url(/static/imgs/Group58.png)
     transition: 0.5s;
   }
 
-
-
-
-
-/* .btn_custom:hover {
-    background: linear-gradient(292.05deg, #272C31 55.87%, #3C4044 132.69%);
-    background: #3e4042;
-    box-shadow: 4px 4px 15px #31177b, -4px -4px 15px #7b1779;
-    color: #fff;
-} */
-
+.link_transition{
+    transition: 0.5s;
+}
 
 
 
 
 ::selection {
-    background: #ce29cb; /* Safari */
+    background: #7707b8; /* Safari */
     }
     ::-moz-selection {
     background: #7707b8; /* Firefox */
@@ -454,14 +448,7 @@ background-image:url(/static/imgs/Group58.png)
 
 
 
-.img_background {
-    background: url(/static/imgs/portfolioimg.png) -9px 21px no-repeat;
-    width: 100%;
-    height: 1075px;
-    position: absolute;
-    overflow: hidden;
-    top: -240px;
-}
+
 
 
 .fluid_block{
@@ -469,8 +456,55 @@ background-image:url(/static/imgs/Group58.png)
     width: 1366px;
     flex: 0;
     max-width: 100%;
+    padding-left: 30px;
 }
 
 .no_padding{
     padding: 0 0 0 0;
+}
+
+.case_radius{
+    border-radius: 15px;
+}
+
+
+
+.padding_lr_30{
+    padding: 30px;
+}
+
+
+
+.link_custom{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.045em;
+    color: #380bb6;
+    display: inline-block;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 1.5;
+    text-decoration: none !important;
+}
+
+.link_custom:hover{
+    color: #ce29cb;
+}
+
+
+.bg_img{
+    background: url(/static/imgs/case_one.png) 0px 0px no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.case_content{
+    width: 300px;
+    margin: auto 0;
+    flex: none;
 }

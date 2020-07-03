@@ -8,13 +8,13 @@
 <div class="container-xxl" >
 <div class="card main_mt main_mb text-center bg-transparent">
 
-    <div class="card-body">
+    <div class="card-body no_padding">
       <div class="card-title img_text">
         <div class="title_h1" contenteditable="true">Developer <br> of web services <br> and of sites
         </div>
       </div>
       <p class="card-text mb-5">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn  btn_custom btn_left transition animation_shadow">View portfolio
+      <a href="{% url 'portfolio' %}" class="btn  btn_custom btn_left transition animation_shadow">View portfolio
     </a>
       <a href="#" class="btn  btn_custom animation_shadow transition">Contact now
     </a>
@@ -26,8 +26,8 @@
 
 <div class="card main_mt  bg-transparent">
 
-  <div class="col-sm-7 responsive_title">
-  <div class="card-body">
+  <div class="col-sm-7 responsive_title no_padding">
+  <div class="card-body no_padding">
     <div class="card-title img_text">
       <div class="title_h1" >Development
       </div>
@@ -46,7 +46,7 @@
 
 
 <div class="row main_mb ">
-  <div class=" row col-sm-7 responsive_el">
+  <div class=" row col-sm-7 responsive_el ">
     <div class="col-sm-7 responsive_el" >
       <canvas id="myChart" width="400" height="400"></canvas>
       <script>
@@ -196,7 +196,7 @@
           Each time a font is updated — such as when new characters 
           are added — SkyFonts will automatically update the font on your device. Each time a font is updated — such as when new characters are added — SkyFonts will automatically update the font on your device.
         </p>
-        <a href="#" class="btn  btn_custom btn_left transition animation_shadow">View portfolio
+        <a href="{% url 'portfolio' %}" class="btn  btn_custom btn_left transition animation_shadow">View portfolio
         </a>
       </div>
   
@@ -204,14 +204,14 @@
 
 
   
-      <div class="col-sm-5 responsive_el">
+      <div class="col-sm-5 responsive_el height_el">
           <div class="img_background"></div>
       </div>
   </div>
 
 
   </div>
-
+</div>
 
 
 

@@ -33,3 +33,14 @@ class Index(View):
                'var_request': var_request, 
             }
             return render(request, 'exception.html', ctx)
+
+
+class Portfolio(View):
+    def get(self, request):
+
+        return render (request, 'portfolio.html')
+
+class LiveChat(View):
+    def get(self, request):
+
+        return render (request, 'live_chat.html')
