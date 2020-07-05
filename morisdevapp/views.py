@@ -8,6 +8,12 @@ from django.http import Http404
 
 
 from django.contrib import messages 
+
+import json
+
+from django.utils.safestring import mark_safe
+
+
 #... def your_view(request) 
 # 
 # #... try: 
@@ -41,6 +47,10 @@ class Portfolio(View):
         return render (request, 'portfolio.html')
 
 class LiveChat(View):
-    def get(self, request):
+    def get(self, request, room_name):
+        print('room_name', room_name)
+        ctx = {
+            'room_name_json' : mark_safe(json.dumps(room_name))
+        }
 
-        return render (request, 'live_chat.html')
+        return render (request, 'live_chat.html', ctx)

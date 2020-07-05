@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     re_path(r'^$', Index.as_view(), name='index'),
     path('portfolio', Portfolio.as_view(), name='portfolio'),
-    path('live-chat', LiveChat.as_view(), name='live_chat'),
+    path('<str:room_name>/', LiveChat.as_view(), name='live_chat'),
 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
 
